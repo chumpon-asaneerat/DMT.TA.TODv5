@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB7FB4B5-3662-479E-A7DA-26B73611BFD4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DMT</RootNamespace>
+    <AssemblyName>DMT.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Executables\Production\Common\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\References\Newtonsoft.Json.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Old_v3\Configurations\Configs\App\01.TAAppPlazaConfig.cs" />
+    <None Include="Old_v3\Configurations\Configs\App\02.TODAppPlazaConfig.cs" />
+    <None Include="Old_v3\Configurations\Configs\App\03.AccountAppPlazaConfig.cs" />
+    <None Include="Old_v3\Configurations\Configs\App\04.PlazaAppConfig.cs" />
+    <None Include="Old_v3\Configurations\Configs\Message\01.TODMessageResendConfig.cs" />
+    <None Include="Old_v3\Configurations\Configs\Message\02.TAMessageResendConfig.cs" />
+    <None Include="Old_v3\Configurations\Configs\Message\03.AccountMessageResendConfig.cs" />
+    <None Include="Old_v3\Configurations\Configs\Message\00.MessageResendConfig.cs" />
+    <None Include="Old_v3\Configurations\Configs\UI\HeaderBarConfig.cs" />
+    <None Include="Old_v3\Configurations\Manager\00.JsonConfigFileManger.cs" />
+    <None Include="Old_v3\Configurations\Manager\01.TAConfigManager.cs" />
+    <None Include="Old_v3\Configurations\Manager\02.TODConfigManager.cs" />
+    <None Include="Old_v3\Configurations\Manager\03.AccountConfigManager.cs" />
+    <None Include="Old_v3\Configurations\Manager\04.PlazaAppConfigManager.cs" />
+    <None Include="Old_v3\Configurations\Manager\05.TODResendConfigManager.cs" />
+    <None Include="Old_v3\Configurations\Manager\06.TAResendConfigManager.cs" />
+    <None Include="Old_v3\Configurations\Manager\07.AccountResendConfigManager.cs" />
+    <None Include="Old_v3\Configurations\Manager\08.TODSubAdjConfigManager.cs" />
+    <None Include="Old_v3\Configurations\Manager\09.PlazaAppSupAdjConfigManager.cs" />
+    <None Include="Old_v3\Configurations\_Base\01.DMTConfig.cs" />
+    <None Include="Old_v3\Configurations\_Base\02.WebServiceConfig.cs" />
+    <None Include="Old_v3\Configurations\_Base\03.RabbitMQServiceConfig.cs" />
+    <None Include="Old_v3\Configurations\_Base\04.TAxTODWebServiceConfig.cs" />
+    <None Include="Old_v3\Configurations\_Base\05.SCWWebServiceConfig.cs" />
+    <None Include="Old_v3\Configurations\_Base\06.TAAppWebServiceConfig.cs" />
+    <None Include="Old_v3\Configurations\_Base\07.TODAppWebServiceConfig.cs" />
+    <None Include="Old_v3\Configurations\_Base\08.SupAdjWebSocketConfig.cs" />
+    <None Include="Old_v3\Configurations\__Interfaces\01.IDMTConfig.cs" />
+    <None Include="Old_v3\Configurations\__Interfaces\02.IRabbitMQConfig.cs" />
+    <None Include="Old_v3\Configurations\__Interfaces\03.ISCWConfig.cs" />
+    <None Include="Old_v3\Configurations\__Interfaces\04.ITAxTODConfig.cs" />
+    <None Include="Old_v3\Configurations\__Interfaces\05.ITAAppConfig.cs" />
+    <None Include="Old_v3\Configurations\__Interfaces\06.ITODAppConfig.cs" />
+    <None Include="Old_v3\Configurations\Configs\UI\StatusBarConfig.cs" />
+    <None Include="Old_v3\Consts\AppConsts.cs" />
+    <None Include="Old_v3\Consts\ErrorConsts.cs" />
+    <Compile Include="Routes\RouteConsts.cs" />
+    <None Include="Old_v3\Routes\SCW\Emu\SCW.Emulator.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\SCW\Master\SCW.Master.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\SCW\SCW.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\SCW\Security\SCW.Security.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\SCW\TOD\SCW.TOD.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\SCW\Version\SCW.Version.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\TAxTOD\Credit\TAxTOD.Account.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\TAxTOD\Coupons\TAxTOD.Coupon.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\TAxTOD\Exchange\TAxTOD.Exchange.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\TAxTOD\SAP\TAxTOD.SAP.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\TAxTOD\TAA\TAxTOD.TAA.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\TAxTOD\TAxTOD.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\TAxTOD\TA\TAxTOD.TA.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\TAxTOD\TCT\TAxTOD.TCT.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\TAxTOD\TOD\TAxTOD.TOD.RouteConsts.cs" />
+    <None Include="Old_v3\Routes\TA\Coupon\Actions\TSB\Current.cs" />
+    <None Include="Old_v3\Routes\TA\Coupon\Actions\User\Sold.cs" />
+    <None Include="Old_v3\Routes\TA\Coupon\TA.Coupon.Controller.cs" />
+    <None Include="Old_v3\Routes\TA\Credit\Actions\User\Completed.cs" />
+    <None Include="Old_v3\Routes\TA\Credit\Actions\User\Current.cs" />
+    <None Include="Old_v3\Routes\TA\Credit\Actions\User\Save.cs" />
+    <None Include="Old_v3\Routes\TA\Credit\TA.Credit.Controller.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\Lane\Gets.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\Lane\Save.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\Lane\Searchs.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\PlazaGroup\Gets.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\PlazaGroup\Save.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\PlazaGroup\Searchs.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\Plaza\Gets.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\Plaza\Save.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\Plaza\Searchs.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\TSB\Current.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\TSB\Gets.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\TSB\Save.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\Actions\TSB\SetActive.cs" />
+    <None Include="Old_v3\Routes\TA\Infrastructure\TA.Infrastructure.Controller.cs" />
+    <None Include="Old_v3\Routes\TA\Notify\Actions\IsAlive.cs" />
+    <None Include="Old_v3\Routes\TA\Notify\Actions\TSBChanged.cs" />
+    <None Include="Old_v3\Routes\TA\Notify\TA.Notify.Controller.cs" />
+    <None Include="Old_v3\Routes\TA\Revenue\Actions\Update.cs" />
+    <None Include="Old_v3\Routes\TA\Revenue\TA.Revenue.Controller.cs" />
+    <None Include="Old_v3\Routes\TA\Security\Actions\Role\Gets.cs" />
+    <None Include="Old_v3\Routes\TA\Security\Actions\Role\Save.cs" />
+    <None Include="Old_v3\Routes\TA\Security\Actions\User\Gets.cs" />
+    <None Include="Old_v3\Routes\TA\Security\Actions\User\Save.cs" />
+    <None Include="Old_v3\Routes\TA\Security\Actions\User\Searchs.cs" />
+    <None Include="Old_v3\Routes\TA\Security\TA.Security.Controller.cs" />
+    <None Include="Old_v3\Routes\TA\Shift\Actions\Common\Gets.cs" />
+    <None Include="Old_v3\Routes\TA\Shift\Actions\TSB\Update.cs" />
+    <None Include="Old_v3\Routes\TA\Shift\Actions\User\Update.cs" />
+    <None Include="Old_v3\Routes\TA\Shift\TA.Shift.Controller.cs" />
+    <None Include="Old_v3\Routes\TA\TA.Controller.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\Lane\Gets.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\Lane\Save.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\Lane\Searchs.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\PlazaGroup\Gets.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\PlazaGroup\Save.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\PlazaGroup\Searchs.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\Plaza\Gets.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\Plaza\Save.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\Plaza\Searchs.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\TSB\Current.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\TSB\Gets.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\TSB\Save.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\Actions\TSB\SetActive.cs" />
+    <None Include="Old_v3\Routes\TOD\Infrastructure\TOD.Infrastructure.Controller.cs" />
+    <None Include="Old_v3\Routes\TOD\Notify\Actions\IsAlive.cs" />
+    <None Include="Old_v3\Routes\TOD\Notify\Actions\TSBChanged.cs" />
+    <None Include="Old_v3\Routes\TOD\Notify\TOD.Notify.Controller.cs" />
+    <None Include="Old_v3\Routes\TOD\Revenue\Actions\Update.cs" />
+    <None Include="Old_v3\Routes\TOD\Revenue\TOD.Revenue.Controller.cs" />
+    <None Include="Old_v3\Routes\TOD\Security\Actions\Role\Gets.cs" />
+    <None Include="Old_v3\Routes\TOD\Security\Actions\Role\Save.cs" />
+    <None Include="Old_v3\Routes\TOD\Security\Actions\User\Gets.cs" />
+    <None Include="Old_v3\Routes\TOD\Security\Actions\User\Save.cs" />
+    <None Include="Old_v3\Routes\TOD\Security\Actions\User\Searchs.cs" />
+    <None Include="Old_v3\Routes\TOD\Security\TOD.Security.Controller.cs" />
+    <None Include="Old_v3\Routes\TOD\Shift\Actions\Common\Gets.cs" />
+    <None Include="Old_v3\Routes\TA\Shift\Actions\TSB\Current.cs" />
+    <None Include="Old_v3\Routes\TOD\Shift\Actions\TSB\Update.cs" />
+    <None Include="Old_v3\Routes\TOD\Shift\Actions\User\Update.cs" />
+    <None Include="Old_v3\Routes\TOD\Shift\TOD.Shift.Controller.cs" />
+    <None Include="Old_v3\Routes\TOD\TOD.Controller.cs" />
+    <Compile Include="ExtensionMethods\DateTime.cs" />
+    <Compile Include="ExtensionMethods\NJson.cs" />
+    <Compile Include="ExtensionMethods\RangeParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CommandLine.cs" />
+    <None Include="Old_v3\Services\JsonMessageTransferService.cs" />
+    <Compile Include="Utils\WPFUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\00.NLib\NLib\NLib.csproj">
+      <Project>{41a9d6c0-c833-403f-9bc1-eecdc246a428}</Project>
+      <Name>NLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
