@@ -9,6 +9,46 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLib", "00.NLib\NLib\NLib.c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLib.Reports", "00.NLib\NLib.Reports\NLib.Reports.csproj", "{5879D92A-F850-4A70-8D88-99D29F6A46F3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Core", "01.Core", "{E817BF30-7A38-4D12-912D-4F03EA75010A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Models", "02.Models", "{776972D5-615A-48C8-8365-920CFF8F73C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.WebServices.Core", "03.WebServices.Core", "{E2B764B0-A0C1-418A-B69C-6239F0FA76A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.WebServices.Clients", "04.WebServices.Clients", "{28F1A46B-5960-4D39-A3EF-983965BC0FBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.WebServices.Servers", "05.WebServices.Servers", "{717981C9-A1A2-41EC-90C9-E70A7C0D3058}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06.Controls", "06.Controls", "{7FF03D6D-455E-4081-A902-BB240507AD4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09.App", "09.App", "{A1A449B5-5473-44BD-8236-5E2A8224428F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10.Tests", "10.Tests", "{98EAEAF6-DBA4-40B3-B005-86C3BF239500}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11.Samples", "11.Samples", "{CEE64D80-FC93-48F5-99D8-9A8430FAC9BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99.Tools", "99.Tools", "{D231FD9E-47E5-45F3-874F-7D9883DCC611}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.VSIX", "01.VSIX", "{493D2F2F-E173-43DC-B76C-8EE078A7225B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.RFREADER", "02.RFREADER", "{D9501D34-B7CA-4FB2-89C4-6EF99D49D155}"
+	ProjectSection(SolutionItems) = preProject
+		99.Tools\02.RFREADER\ICTransfer.exe = 99.Tools\02.RFREADER\ICTransfer.exe
+		99.Tools\02.RFREADER\MasterCom.dll = 99.Tools\02.RFREADER\MasterCom.dll
+		99.Tools\02.RFREADER\MasterRD.dll = 99.Tools\02.RFREADER\MasterRD.dll
+		99.Tools\02.RFREADER\SL600 test.txt = 99.Tools\02.RFREADER\SL600 test.txt
+		99.Tools\02.RFREADER\SL_Paper.dll = 99.Tools\02.RFREADER\SL_Paper.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportViewer", "ReportViewer", "{9AE33265-AF62-4A3F-B856-9BB74FD292F1}"
+	ProjectSection(SolutionItems) = preProject
+		99.Tools\01.VSIX\ReportViewer\Microsoft.DataTools.ReportingServices.z01 = 99.Tools\01.VSIX\ReportViewer\Microsoft.DataTools.ReportingServices.z01
+		99.Tools\01.VSIX\ReportViewer\Microsoft.DataTools.ReportingServices.z02 = 99.Tools\01.VSIX\ReportViewer\Microsoft.DataTools.ReportingServices.z02
+		99.Tools\01.VSIX\ReportViewer\Microsoft.DataTools.ReportingServices.zip = 99.Tools\01.VSIX\ReportViewer\Microsoft.DataTools.ReportingServices.zip
+		99.Tools\01.VSIX\ReportViewer\Microsoft.RdlcDesigner.vsix = 99.Tools\01.VSIX\ReportViewer\Microsoft.RdlcDesigner.vsix
+		99.Tools\01.VSIX\ReportViewer\note.txt = 99.Tools\01.VSIX\ReportViewer\note.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +70,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{41A9D6C0-C833-403F-9BC1-EECDC246A428} = {E4620CFD-77B5-492A-BD24-D59707E33916}
 		{5879D92A-F850-4A70-8D88-99D29F6A46F3} = {E4620CFD-77B5-492A-BD24-D59707E33916}
+		{493D2F2F-E173-43DC-B76C-8EE078A7225B} = {D231FD9E-47E5-45F3-874F-7D9883DCC611}
+		{D9501D34-B7CA-4FB2-89C4-6EF99D49D155} = {D231FD9E-47E5-45F3-874F-7D9883DCC611}
+		{9AE33265-AF62-4A3F-B856-9BB74FD292F1} = {493D2F2F-E173-43DC-B76C-8EE078A7225B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5EDD7573-CBE4-4640-8E16-F185F2B088F0}
