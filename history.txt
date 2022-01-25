@@ -1,4 +1,11 @@
 [commited]
+Update 2022-01-26 #3
+- DMT.TAxTODv5
+  - DMT.RabbitMQ.Core project created and assigned App.config/references
+  - DMT.Rest.Client project created and assigned App.config/references
+  - DMT.Rest.Server project created and assigned App.config/references
+
+[commited]
 Update 2022-01-26 #2
 - DMT.TAxTODv5
   - DMT.Core project
