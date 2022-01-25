@@ -292,7 +292,7 @@ namespace DMT
                             // Create new List of not exists.
                             _defaultSettings.Converters = new List<JsonConverter>();
                         }
-                        if (null != _defaultSettings.Converters && 
+                        if (null != _defaultSettings.Converters &&
                             !_defaultSettings.Converters.Contains(_dateConverter))
                         {
                             _defaultSettings.Converters.Add(_dateConverter);
@@ -316,7 +316,7 @@ namespace DMT
             try
             {
                 var settings = NJson.DefaultSettings;
-                result = JsonConvert.SerializeObject(value, 
+                result = JsonConvert.SerializeObject(value,
                     (minimized) ? Formatting.None : Formatting.Indented, settings);
             }
             catch (Exception ex)
@@ -374,7 +374,7 @@ namespace DMT
                     serializer.DateFormatString = "yyyy'-'MM'-'dd'T'HH':'mm':'ss.fffK";
                     serializer.Serialize(file, value);
 
-                    try 
+                    try
                     {
                         file.Flush();
                         file.Close();
