@@ -1,4 +1,16 @@
 [commited]
+Update 2022-01-26 #2
+- DMT.TAxTODv5
+  - DMT.Core project
+    - Remove OldV3 folder.
+
+[commited]
+Update 2022-01-26 #1
+- DMT.TAxTODv5
+  - Update NJson.cs from v3.
+
+
+[commited]
 Update 2021-10-03 #2
 - DMT.TAxTODv5
   - Move project parent folder.
