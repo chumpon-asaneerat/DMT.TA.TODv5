@@ -1,4 +1,9 @@
 [commited]
+Update 2022-01-26 #7
+- DMT.TAxTODv5
+  - DMT.Controls project created and assigned App.config/references
+
+[commited]
 Update 2022-01-26 #6
 - DMT.TAxTODv5
   - DMT.Models project created and assigned App.config/references
