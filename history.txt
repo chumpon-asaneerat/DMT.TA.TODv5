@@ -1,4 +1,13 @@
 [commited]
+Update 2022-01-26 #6
+- DMT.TAxTODv5
+  - DMT.Models project created and assigned App.config/references
+  - DMT.Plaza.Models project created and assigned App.config/references
+  - DMT.TA.Models project created and assigned App.config/references
+  - DMT.TOD.Models project created and assigned App.config/references
+  - DMT.Account.Models project created and assigned App.config/references
+
+[commited]
 Update 2022-01-26 #5
 - DMT.TAxTODv5
   - DMT.TA.Rest.Server project created and assigned App.config/references

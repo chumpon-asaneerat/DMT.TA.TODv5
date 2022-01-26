@@ -66,6 +66,10 @@
       <Project>{db7fb4b5-3662-479e-a7da-26b73611bfd4}</Project>
       <Name>DMT.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\02.Models\DMT.Models\DMT.Models.csproj">
+      <Project>{68f7bb42-d6a5-4443-9440-71fd0f257745}</Project>
+      <Name>DMT.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
