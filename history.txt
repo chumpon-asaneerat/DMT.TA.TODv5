@@ -1,4 +1,10 @@
 [commited]
+Update 2022-01-26 #9
+- DMT.TAxTODv5
+  - DMT.Controls project
+    - Add reference - Xceed.Wpf.Toolkit.dll
+
+[commited]
 Update 2022-01-26 #8
 - DMT.TAxTODv5
   - DMT.Controls project
