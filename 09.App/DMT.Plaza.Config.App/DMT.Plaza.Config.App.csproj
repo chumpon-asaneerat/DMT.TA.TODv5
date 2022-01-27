@@ -45,6 +45,18 @@
     <ApplicationIcon>app.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ControlzEx">
+      <HintPath>..\..\References\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent">
+      <HintPath>..\..\References\Fluent.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.AvalonEdit">
+      <HintPath>..\..\References\ICSharpCode.AvalonEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors">
+      <HintPath>..\..\References\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -59,6 +71,12 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock">
+      <HintPath>..\..\References\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>..\..\References\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -100,9 +118,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
@@ -111,6 +127,58 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\00.NLib\NLib\NLib.csproj">
+      <Project>{41a9d6c0-c833-403f-9bc1-eecdc246a428}</Project>
+      <Name>NLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\01.Core\DMT.Core\DMT.Core.csproj">
+      <Project>{db7fb4b5-3662-479e-a7da-26b73611bfd4}</Project>
+      <Name>DMT.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Models\DMT.Models\DMT.Models.csproj">
+      <Project>{68f7bb42-d6a5-4443-9440-71fd0f257745}</Project>
+      <Name>DMT.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.WebServices.Core\DMT.Rest.Client\DMT.Rest.Client.csproj">
+      <Project>{1389ac92-3759-400b-a253-285b93fa3dce}</Project>
+      <Name>DMT.Rest.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04.WebServices.Clients\DMT.SCW.Rest.Client\DMT.SCW.Rest.Client.csproj">
+      <Project>{aad11424-7372-493b-9a8f-28d2095f241c}</Project>
+      <Name>DMT.SCW.Rest.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04.WebServices.Clients\DMT.TA.Rest.Client\DMT.TA.Rest.Client.csproj">
+      <Project>{c91c9f2d-790c-4c4e-8705-58c7925bebd9}</Project>
+      <Name>DMT.TA.Rest.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04.WebServices.Clients\DMT.TAxTOD.Rest.Client\DMT.TAxTOD.Rest.Client.csproj">
+      <Project>{9bda5e43-b846-483b-852a-f3da0f354256}</Project>
+      <Name>DMT.TAxTOD.Rest.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04.WebServices.Clients\DMT.TOD.Rest.Client\DMT.TOD.Rest.Client.csproj">
+      <Project>{1e6a6c44-3eed-4933-8fe3-0e9ec227469e}</Project>
+      <Name>DMT.TOD.Rest.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Cards\Card-Black.png" />
+    <Resource Include="Images\Cards\Card-Blue.png" />
+    <Resource Include="Images\Cards\Card-Gray.png" />
+    <Resource Include="Images\Cards\Card-Green.png" />
+    <Resource Include="Images\Cards\Card-Purple.png" />
+    <Resource Include="Images\Cards\Card-Red.png" />
+    <Resource Include="Images\Clock\clock.png" />
+    <Resource Include="Images\Hardwares\CRU-67CL.png" />
+    <Resource Include="Images\Networks\Network 1 Information.png" />
+    <Resource Include="Images\Networks\Network 2 Search.png" />
+    <Resource Include="Images\Networks\plaza_network1.png" />
+    <Resource Include="Images\Networks\plaza_network2.png" />
+    <Resource Include="Images\States\checked.png" />
+    <Resource Include="Images\States\unchecked.png" />
+    <Resource Include="Images\Toll\Money.ico" />
+    <Resource Include="Images\Users\users.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
