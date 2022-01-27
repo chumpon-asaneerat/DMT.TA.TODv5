@@ -1,4 +1,14 @@
 [commited]
+Update 2022-01-27 #7
+- DMT.TAxTODv5
+  - DMT.Core project 
+    - Add AppConsts.cs -> port from V3 and change version/build/updated date.
+  - DMT.Account.App project 
+    - Update App.xaml.cs
+      - Implements OnStartup method.
+      - Implements OnExit method.
+
+[commited]
 Update 2022-01-27 #6
 - DMT.TAxTODv5
   - DMT.Plaza.Simulator.App project 

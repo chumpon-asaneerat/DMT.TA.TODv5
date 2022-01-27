@@ -58,6 +58,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consts\AppConsts.cs" />
     <Compile Include="Routes\RouteConsts.cs" />
     <Compile Include="ExtensionMethods\DateTime.cs" />
     <Compile Include="ExtensionMethods\NJson.cs" />
