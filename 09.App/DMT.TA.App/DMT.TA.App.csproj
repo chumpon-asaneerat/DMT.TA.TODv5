@@ -46,8 +46,89 @@
     <ApplicationIcon>app.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\..\References\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors">
+      <HintPath>..\..\References\Microsoft.Owin.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.FileSystems">
+      <HintPath>..\..\References\Microsoft.Owin.FileSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.HttpListener">
+      <HintPath>..\..\References\Microsoft.Owin.Host.HttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Hosting">
+      <HintPath>..\..\References\Microsoft.Owin.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.StaticFiles">
+      <HintPath>..\..\References\Microsoft.Owin.StaticFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.2.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\..\References\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="RabbitMQ.Client">
+      <HintPath>..\..\References\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\References\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.Serializers.NewtonsoftJson">
+      <HintPath>..\..\References\RestSharp.Serializers.NewtonsoftJson.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\..\References\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLiteNetExtensions">
+      <HintPath>..\..\References\SQLiteNetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\..\References\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\..\References\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.nativelibrary">
+      <HintPath>..\..\References\SQLitePCLRaw.nativelibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.dynamic_cdecl">
+      <HintPath>..\..\References\SQLitePCLRaw.provider.dynamic_cdecl.dll</HintPath>
+    </Reference>
+    <Reference Include="Swashbuckle.Core">
+      <HintPath>..\..\References\Swashbuckle.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -60,6 +141,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>..\..\References\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -101,9 +185,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
@@ -111,9 +193,102 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\Background\snartcard.png" />
+    <Resource Include="Images\Button\Approve.png" />
+    <Resource Include="Images\Button\Approved.png" />
+    <Resource Include="Images\Button\Approved2.png" />
+    <Resource Include="Images\Button\Approved3.png" />
+    <Resource Include="Images\Button\back.png" />
+    <Resource Include="Images\Button\Back3.png" />
+    <Resource Include="Images\Button\Cancel.png" />
+    <Resource Include="Images\Button\Cancel2.png" />
+    <Resource Include="Images\Button\Clear2.png" />
+    <Resource Include="Images\Button\Edit.png" />
+    <Resource Include="Images\Button\Home.png" />
+    <Resource Include="Images\Button\Money.png" />
+    <Resource Include="Images\Button\Money2.png" />
+    <Resource Include="Images\Button\next.png" />
+    <Resource Include="Images\Button\OK.png" />
+    <Resource Include="Images\Button\OK2.png" />
+    <Resource Include="Images\Button\Printer.png" />
+    <Resource Include="Images\Button\Printer2.png" />
+    <Resource Include="Images\Button\Printer3.png" />
+    <Resource Include="Images\Button\Refresh.png" />
+    <Resource Include="Images\Button\Rejected.png" />
+    <Resource Include="Images\Button\Rejected3.png" />
+    <Resource Include="Images\Button\Rejected4.png" />
+    <Resource Include="Images\Button\Rejected5.png" />
+    <Resource Include="Images\Button\Return.png" />
+    <Resource Include="Images\Button\Save.png" />
+    <Resource Include="Images\Button\Save2.png" />
+    <Resource Include="Images\Button\search.png" />
+    <Resource Include="Images\Button\search2.png" />
+    <Resource Include="Images\Button\search3.png" />
+    <Resource Include="Images\Button\User.png" />
+    <Resource Include="Images\Logo\tollway.png" />
+    <Resource Include="Images\States\checked.png" />
+    <Resource Include="Images\States\unchecked.png" />
     <Resource Include="app.ico" />
     <Content Include="MasterCom.dll" />
     <Content Include="MasterRD.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\00.NLib\NLib.Reports\NLib.Reports.csproj">
+      <Project>{5879d92a-f850-4a70-8d88-99d29f6a46f3}</Project>
+      <Name>NLib.Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\00.NLib\NLib\NLib.csproj">
+      <Project>{41a9d6c0-c833-403f-9bc1-eecdc246a428}</Project>
+      <Name>NLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\01.Core\DMT.Core\DMT.Core.csproj">
+      <Project>{db7fb4b5-3662-479e-a7da-26b73611bfd4}</Project>
+      <Name>DMT.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\01.Core\DMT.Smartcard\DMT.Smartcard.csproj">
+      <Project>{5148ed2a-41fa-409c-bb41-36806d98bf81}</Project>
+      <Name>DMT.Smartcard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Models\DMT.Models\DMT.Models.csproj">
+      <Project>{68f7bb42-d6a5-4443-9440-71fd0f257745}</Project>
+      <Name>DMT.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Models\DMT.TA.Models\DMT.TA.Models.csproj">
+      <Project>{aa0e0276-05c6-475b-b604-2ab661926064}</Project>
+      <Name>DMT.TA.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.Models\DMT.TOD.Models\DMT.TOD.Models.csproj">
+      <Project>{6d9352e9-123a-4026-9081-f95fa8c49adf}</Project>
+      <Name>DMT.TOD.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.WebServices.Core\DMT.RabbitMQ.Client\DMT.RabbitMQ.Client.csproj">
+      <Project>{3611bf28-56e2-4ec5-b0e2-eb844714eca3}</Project>
+      <Name>DMT.RabbitMQ.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.WebServices.Core\DMT.Rest.Client\DMT.Rest.Client.csproj">
+      <Project>{1389ac92-3759-400b-a253-285b93fa3dce}</Project>
+      <Name>DMT.Rest.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04.WebServices.Clients\DMT.SCW.Rest.Client\DMT.SCW.Rest.Client.csproj">
+      <Project>{aad11424-7372-493b-9a8f-28d2095f241c}</Project>
+      <Name>DMT.SCW.Rest.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04.WebServices.Clients\DMT.TAxTOD.Rest.Client\DMT.TAxTOD.Rest.Client.csproj">
+      <Project>{9bda5e43-b846-483b-852a-f3da0f354256}</Project>
+      <Name>DMT.TAxTOD.Rest.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04.WebServices.Clients\DMT.TOD.Rest.Client\DMT.TOD.Rest.Client.csproj">
+      <Project>{1e6a6c44-3eed-4933-8fe3-0e9ec227469e}</Project>
+      <Name>DMT.TOD.Rest.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\05.WebServices.Servers\DMT.TA.Rest.Server\DMT.TA.Rest.Server.csproj">
+      <Project>{dde5362f-e083-421e-8ac7-b0b0133913c5}</Project>
+      <Name>DMT.TA.Rest.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08.Controls\DMT.Controls\DMT.Controls.csproj">
+      <Project>{c7e58754-a856-46d4-8742-e3bec39446ef}</Project>
+      <Name>DMT.Controls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
