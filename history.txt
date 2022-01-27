@@ -1,4 +1,12 @@
 [commited]
+Update 2022-01-27 #16
+- DMT.TAxTODv5
+  - DMT.TA.App project 
+    - Update MainWindow code
+      - Update MainWindow layout.
+      - Setup PageManager code.
+
+[commited]
 Update 2022-01-27 #15
 - DMT.TAxTODv5
   - DMT.Account.App project 
