@@ -1,4 +1,11 @@
 [commited]
+Update 2022-01-27 #2
+- DMT.TAxTODv5
+  - DMT.Account.App project 
+    - Import images from v3
+    - Add related assembly references.
+
+[commited]
 Update 2022-01-27 #1
 - DMT.TAxTODv5
   - DMT.Account.App project created and assigned App.config, Icon, app.manifest and embeded smartcard dlls.
