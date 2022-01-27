@@ -55,6 +55,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -78,10 +81,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\" />
     <Folder Include="MessageBox\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Controls\UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Themes\Generic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
