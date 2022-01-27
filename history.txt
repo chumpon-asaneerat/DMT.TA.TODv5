@@ -1,4 +1,13 @@
 [commited]
+Update 2022-01-27 #14
+- DMT.TAxTODv5
+  - DMT.Plaza.Simulator.App project 
+    - Update App.xaml -> enable Fluent.
+    - Update MainWindow code
+      - Update Ribbon UI code.
+      - Setup PageManager code.
+
+[commited]
 Update 2022-01-27 #13
 - DMT.TAxTODv5
   - DMT.Plaza.Config.App project 
