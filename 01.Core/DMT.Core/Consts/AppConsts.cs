@@ -73,16 +73,6 @@ namespace DMT
                 public static string Build = "1";
                 public static DateTime LastUpdate = new DateTime(2022, 01, 27, 10, 00, 00);
             }
-
-            public static class PlazaServiceManager
-            {
-                public static string ApplicationName = @"DMT TOD-TA Plaza Service Manager";
-                // common
-                public static string Version = AppConsts.Version;
-                public static string Minor = AppConsts.Minor;
-                public static string Build = "1";
-                public static DateTime LastUpdate = new DateTime(2022, 01, 27, 10, 00, 00);
-            }
         }
     }
 }

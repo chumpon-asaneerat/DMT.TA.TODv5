@@ -1,4 +1,10 @@
 [commited]
+Update 2022-01-27 #12
+- DMT.TAxTODv5
+  - DMT.Core project 
+    - Update AppConsts.cs -> remove PlazaServiceManager class.
+
+[commited]
 Update 2022-01-27 #11
 - DMT.TAxTODv5
   - DMT.Plaza.Simulator.App project 
