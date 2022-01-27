@@ -1,4 +1,12 @@
 [commited]
+Update 2022-01-27 #8
+- DMT.TAxTODv5
+  - DMT.TA.App project 
+    - Update App.xaml.cs
+      - Implements OnStartup method.
+      - Implements OnExit method.
+
+[commited]
 Update 2022-01-27 #7
 - DMT.TAxTODv5
   - DMT.Core project 
