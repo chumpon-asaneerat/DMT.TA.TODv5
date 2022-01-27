@@ -1,4 +1,13 @@
 [commited]
+Update 2022-01-27 #1
+- DMT.TAxTODv5
+  - DMT.Account.App project created and assigned App.config, Icon, app.manifest and embeded smartcard dlls.
+  - DMT.TA.App project created and assigned App.config, Icon, app.manifest and embeded smartcard dlls.
+  - DMT.TOD.App project created and assigned App.config, Icon, app.manifest and embeded smartcard dlls.
+  - DMT.Plaza.Config.App project created and assigned App.config, Icon, app.manifest
+  - DMT.Plaza.Simulator.App project created and assigned App.config, Icon, app.manifest
+
+[commited]
 Update 2022-01-26 #9
 - DMT.TAxTODv5
   - DMT.Controls project
