@@ -1,4 +1,11 @@
 [commited]
+Update 2022-01-27 #4
+- DMT.TAxTODv5
+  - DMT.TOD.App project 
+    - Import images from v3
+    - Add related assembly references.
+
+[commited]
 Update 2022-01-27 #3
 - DMT.TAxTODv5
   - DMT.TA.App project 
