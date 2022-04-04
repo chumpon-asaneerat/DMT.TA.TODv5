@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-04 #1
+- DMT.TAxTODv5
+  - DMT.Core project 
+    - implements NSingelton<T> class #1
+
+[commited]
 Update 2022-01-27 #17
 - DMT.TAxTODv5
   - DMT.TOD.App project 
