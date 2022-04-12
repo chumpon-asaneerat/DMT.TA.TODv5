@@ -450,11 +450,76 @@ namespace DMT.Models.V1
 
 #endregion
 
-#region User
+#region User (1/3)
 
 namespace DMT.Models.V1
 {
+	#region Role (OK)
 
+	/// <summary>
+	/// The Role class.
+	/// </summary>
+	[Serializable, JsonObject(MemberSerialization.OptOut)]
+	public class Role : NTable<Role>
+	{
+		#region Public Properties (OK)
+
+		/// <summary>
+		/// Gets or sets RoleId (used as primary key).
+		/// </summary>
+		[PrimaryKey, MaxLength(20)]
+		public string RoleId { get; set; }
+		/// <summary>
+		/// Gets or sets GroupId.
+		/// </summary>
+		[NotNull]
+		[Indexed]
+		public int GroupId { get; set; }
+		/// <summary>
+		/// Gets or sets Role Name in EN.
+		/// </summary>
+		[MaxLength(50)]
+		public string RoleNameEN { get; set; }
+		/// <summary>
+		/// Gets or sets Role Name in TH.
+		/// </summary>
+		[MaxLength(50)]
+		public string RoleNameTH { get; set; }
+
+		#endregion
+	}
+
+	#endregion
+
+	#region User (OK)
+
+	/// <summary>
+	/// The User class.
+	/// </summary>
+	[Serializable, JsonObject(MemberSerialization.OptOut)]
+	public class User : NTable<User>
+	{
+		#region Public Properties (OK)
+
+		#endregion
+	}
+
+	#endregion
+
+	#region UserAccess (OK)
+
+	/// <summary>
+	/// The UserAccess class.
+	/// </summary>
+	[Serializable, JsonObject(MemberSerialization.OptOut)]
+	public class UserAccess : NTable<UserAccess>
+	{
+		#region Public Properties (OK)
+
+		#endregion
+	}
+
+	#endregion
 }
 
 #endregion
