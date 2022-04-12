@@ -1,4 +1,11 @@
 [commited]
+Update 2022-04-12 #12
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Prepare convert classes for old models in v1 #4
+      - IsAliveResult class
+
+[commited]
 Update 2022-04-12 #11
 - DMT.TAxTODv5
   - DMT.Models project

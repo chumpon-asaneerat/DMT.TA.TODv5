@@ -201,11 +201,29 @@ namespace DMT.Models.V1
 
 #endregion
 
-#region Common
+#region Common (1/1)
 
 namespace DMT.Models.V1
 {
+	#region IsAliveResult (OK)
 
+	/// <summary>
+	/// The IsAliveResult Model Class.
+	/// </summary>
+	[JsonObject(MemberSerialization.OptOut)]
+	public class IsAliveResult
+	{
+		#region Public Properties (OK)
+
+		/// <summary>
+		/// Gets or sets Time Stamp.
+		/// </summary>
+		public DateTime? TimeStamp { get; set; }
+
+		#endregion
+	}
+
+	#endregion
 }
 
 #endregion
