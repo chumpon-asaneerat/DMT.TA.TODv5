@@ -13,7 +13,10 @@ namespace DMT.Models
 {
     #region DMTModelBase (abstract)
 
-    class DMTModelBase
+    /// <summary>
+    /// The DMTModelBase abstract class.
+    /// </summary>
+    public abstract class DMTModelBase : NInpc
     {
     }
 

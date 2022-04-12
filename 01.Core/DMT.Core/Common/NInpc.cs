@@ -25,24 +25,14 @@ namespace DMT
 
         #endregion
 
-        #region Protected Methods
+        #region Private Methods
 
         /// <summary>
-        /// Raise Property Changed event.
-        /// </summary>
-        /// <param name="propertyName">The property name.</param>
-        protected internal void Raise(string propertyName)
-        {
-            if (_lock) return; // if lock do nothing
-            // raise event.
-            PropertyChanged.Call(this, new PropertyChangedEventArgs(propertyName));
-        }
-        /// <summary>
-        /// Raise Property Changed event (Lamda function).
+        /// Internal Raise Property Changed event (Lamda function).
         /// </summary>
         /// <param name="selectorExpression">The Expression function.</param>
 
-        protected internal void Raise<T>(Expression<Func<T>> selectorExpression)
+        private void InternalRaise<T>(Expression<Func<T>> selectorExpression)
         {
             if (_lock) return; // if lock do nothing
             if (null == selectorExpression)
@@ -69,6 +59,21 @@ namespace DMT
             }
             Raise(me.Member.Name);
         }
+
+        #endregion
+
+        #region Protected Methods
+
+        /// <summary>
+        /// Raise Property Changed event.
+        /// </summary>
+        /// <param name="propertyName">The property name.</param>
+        protected internal void Raise(string propertyName)
+        {
+            if (_lock) return; // if lock do nothing
+            // raise event.
+            PropertyChanged.Call(this, new PropertyChangedEventArgs(propertyName));
+        }
         /// <summary>
         /// Raise Property Changed event (Lamda function).
         /// </summary>
@@ -80,7 +85,7 @@ namespace DMT
             {
                 foreach (var item in actions)
                 {
-                    if (null != item) Raise(item);
+                    if (null != item) InternalRaise(item);
                 }
             }
         }
