@@ -42,4 +42,17 @@ namespace DMT.Models
     }
 
     #endregion
+
+    #region IFKs interface
+
+    /// <summary>
+    /// The IFKs interface of T.
+    /// </summary>
+    /// <typeparam name="T">The target type.</typeparam>
+    public interface IFKs<T>
+        where T : NTable, new()
+    {
+    }
+
+    #endregion
 }

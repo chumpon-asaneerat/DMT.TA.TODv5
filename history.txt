@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-12 #7
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Add IFKs<T> interface.
+
+[commited]
 Update 2022-04-12 #6
 - DMT.TAxTODv5
   - DMT.Models project
