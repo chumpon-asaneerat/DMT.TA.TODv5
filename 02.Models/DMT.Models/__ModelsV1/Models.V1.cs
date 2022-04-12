@@ -19,6 +19,8 @@ using System.Reflection;
 
 #endregion
 
+#region Master Tables - (5/5)
+
 namespace DMT.Models.V1
 {
 	#region MActiveStatus (OK)
@@ -196,3 +198,86 @@ namespace DMT.Models.V1
 
 	#endregion
 }
+
+#endregion
+
+#region Common
+
+namespace DMT.Models.V1
+{
+
+}
+
+#endregion
+
+#region Configuration
+
+namespace DMT.Models.V1
+{
+
+}
+
+#endregion
+
+#region User
+
+namespace DMT.Models.V1
+{
+
+}
+
+#endregion
+
+#region Shift
+
+namespace DMT.Models.V1
+{
+
+}
+
+#endregion
+
+#region Infrastructures
+
+namespace DMT.Models.V1
+{
+
+}
+
+#endregion
+
+#region Coupon
+
+namespace DMT.Models.V1
+{
+
+}
+
+#endregion
+
+#region Credit
+
+namespace DMT.Models.V1
+{
+
+}
+
+#endregion
+
+#region Revenue
+
+namespace DMT.Models.V1
+{
+
+}
+
+#endregion
+
+#region Exchange
+
+namespace DMT.Models.V1
+{
+
+}
+
+#endregion
