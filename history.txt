@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-12 #5
+- DMT.TAxTODv5
+  - DMT.Core project
+    - Add System.IO.Compression, System.IO.Compression.FileSystem, System.Management, System.Management.Instrumental reference.
+
+[commited]
 Update 2022-04-12 #4
 - DMT.TAxTODv5
   - DMT.Core project 
