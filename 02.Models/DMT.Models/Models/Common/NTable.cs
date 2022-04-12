@@ -43,6 +43,36 @@ namespace DMT.Models
 
     #endregion
 
+    #region NTable<T>
+
+    /// <summary>
+    /// The NTable (Generic) abstract class.
+    /// </summary>
+    /// <typeparam name="T">The Target Class.</typeparam>
+    public abstract class NTable<T> : NTable
+        where T : NTable, new()
+    {
+        #region Static Methods
+
+        #region Create
+
+        /// <summary>
+        /// Create new instance.
+        /// </summary>
+        /// <returns>Returns new instance.</returns>
+        public static T Create()
+        {
+            return new T();
+        }
+
+        #endregion
+
+        #endregion
+    }
+
+    #endregion
+
+
     #region IFKs interface
 
     /// <summary>

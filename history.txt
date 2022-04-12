@@ -1,4 +1,16 @@
 [commited]
+Update 2022-04-12 #10
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Update NTable<T> class #1.
+    - Prepare convert classes for old models in v1 #2
+      - MActiveStatus enum
+      - MCardAllow class
+      - MCoupon class
+      - MCouponBook class
+      - MCurrency class
+
+[commited]
 Update 2022-04-12 #9
 - DMT.TAxTODv5
   - DMT.Models project
