@@ -1,4 +1,13 @@
 [commited]
+Update 2022-04-12 #13
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Prepare convert classes for old models in v1 #5
+      - AppOption class
+      - UniqueCode class
+      - ViewHistory class
+
+[commited]
 Update 2022-04-12 #12
 - DMT.TAxTODv5
   - DMT.Models project
