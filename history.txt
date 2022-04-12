@@ -1,4 +1,16 @@
 [commited]
+Update 2022-04-12 #8
+- DMT.TAxTODv5
+  - DMT.Account.Models project
+    - Add AccountSqliteScriptManager class.
+  - DMT.Plaza.Models project
+    - Add PlazaSqlScriptManager class.
+  - DMT.TA.Models project
+    - Add TASqliteScriptManager class.
+  - DMT.TOD.Models project
+    - Add TODSqliteScriptManager class.
+
+[commited]
 Update 2022-04-12 #7
 - DMT.TAxTODv5
   - DMT.Models project
