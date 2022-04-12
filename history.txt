@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-12 #1
+- DMT.TAxTODv5
+  - DMT.Core project 
+    - implements NInpc class #1
+
+[commited]
 Update 2022-04-04 #1
 - DMT.TAxTODv5
   - DMT.Core project 
