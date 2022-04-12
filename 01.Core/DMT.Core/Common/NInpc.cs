@@ -33,10 +33,9 @@ namespace DMT
         /// <param name="propertyName">The property name.</param>
         protected internal void Raise(string propertyName)
         {
-            if (!_lock)
-            {
-                PropertyChanged.Call(this, new PropertyChangedEventArgs(propertyName));
-            }
+            if (_lock) return; // if lock do nothing
+            // raise event.
+            PropertyChanged.Call(this, new PropertyChangedEventArgs(propertyName));
         }
         /// <summary>
         /// Raise Property Changed event (Lamda function).
@@ -45,6 +44,7 @@ namespace DMT
 
         protected internal void Raise<T>(Expression<Func<T>> selectorExpression)
         {
+            if (_lock) return; // if lock do nothing
             if (null == selectorExpression)
             {
                 throw new ArgumentNullException("selectorExpression");
@@ -69,6 +69,21 @@ namespace DMT
             }
             Raise(me.Member.Name);
         }
+        /// <summary>
+        /// Raise Property Changed event (Lamda function).
+        /// </summary>
+        /// <param name="actions">The array of lamda expression's functions.</param>
+        public void Raise(params Expression<Func<object>>[] actions)
+        {
+            if (_lock) return; // if lock do nothing
+            if (null != actions && actions.Length > 0)
+            {
+                foreach (var item in actions)
+                {
+                    if (null != item) Raise(item);
+                }
+            }
+        }
 
         #endregion
 
@@ -88,6 +103,11 @@ namespace DMT
         {
             _lock = false;
         }
+
+        #endregion
+
+        #region Public Properties
+
         /// <summary>
         /// Checks is notifiy enabled or disable.
         /// </summary>
