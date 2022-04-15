@@ -1,4 +1,9 @@
 [commited]
+Update 2022-04-15 #1
+- DMT.TAxTODv5
+  - Add required SQL Lite (ado.net) dlls.
+
+[commited]
 Update 2022-04-12 #14
 - DMT.TAxTODv5
   - DMT.Models project
