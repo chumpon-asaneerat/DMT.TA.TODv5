@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-20 #2
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Ported NTable classes.
+
+[commited]
 Update 2022-04-20 #1
 - DMT.TAxTODv5
   - DMT.Models project
