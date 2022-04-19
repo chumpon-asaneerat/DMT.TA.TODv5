@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-20 #7
+- DMT.TAxTODv5
+  - DMT.Rest.Server project
+    - Ported DMTRestServerStartUp classes.
+
+[commited]
 Update 2022-04-20 #6
 - DMT.TAxTODv5
   - DMT.Rest.Client project
