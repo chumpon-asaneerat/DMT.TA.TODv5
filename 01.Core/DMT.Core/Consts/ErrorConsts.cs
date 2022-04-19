@@ -7,7 +7,22 @@ using System.Collections.Generic;
 
 namespace DMT
 {
-    // TODO: Required to add more error code.
+    /// <summary>
+    /// The Rest HTTP Status enum
+    /// </summary>
+    public enum HttpStatus : int
+    {
+        /// <summary>Initial value.</summary>
+        None = -1,
+        /// <summary>HTTP is not in success range 200-399.</summary>
+        Failed = 0,
+        /// <summary>HTTP is in success range 200-399.</summary>
+        Success = 1
+    }
+
+    /// <summary>
+    /// The Database Error Enums.
+    /// </summary>
     public enum ErrNums : int
     {
         Success = 0,

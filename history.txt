@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-20 #6
+- DMT.TAxTODv5
+  - DMT.Rest.Client project
+    - Ported NRestResult classes.
+
+[commited]
 Update 2022-04-20 #5
 - DMT.TAxTODv5
   - DMT.RabbitMQ.Client project
