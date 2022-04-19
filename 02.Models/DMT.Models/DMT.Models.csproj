@@ -88,9 +88,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Common\DMTModelBase.cs" />
+    <Compile Include="Models\Common\NDbResult.cs" />
     <Compile Include="Models\Common\NTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="__ModelsV1\Models.V1.cs" />
+    <None Include="__ModelsV1\Class1.cs" />
+    <None Include="__ModelsV1\Models.V1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

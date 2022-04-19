@@ -65,6 +65,7 @@
     <Compile Include="Common\NInpc.cs" />
     <Compile Include="Common\NSingelton.cs" />
     <Compile Include="Consts\AppConsts.cs" />
+    <Compile Include="Consts\ErrorConsts.cs" />
     <Compile Include="Routes\RouteConsts.cs" />
     <Compile Include="ExtensionMethods\DateTime.cs" />
     <Compile Include="ExtensionMethods\NJson.cs" />
