@@ -91,6 +91,7 @@
     <Compile Include="Models\Common\NDbResult.cs" />
     <Compile Include="Models\Common\NQueries.cs" />
     <Compile Include="Models\Common\NTable.cs" />
+    <Compile Include="Models\Common\Utils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="__ModelsV1\Class1.cs" />
     <None Include="__ModelsV1\Models.V1.cs" />

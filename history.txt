@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-20 #4
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Ported MD5 utils classes.
+
+[commited]
 Update 2022-04-20 #3
 - DMT.TAxTODv5
   - DMT.Models project
