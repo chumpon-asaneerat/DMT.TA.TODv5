@@ -101,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ExtensionMethods\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\00.NLib\NLib\NLib.csproj">
