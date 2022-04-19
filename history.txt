@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-20 #5
+- DMT.TAxTODv5
+  - DMT.RabbitMQ.Client project
+    - Ported RabbitMQClient class.
+
+[commited]
 Update 2022-04-20 #4
 - DMT.TAxTODv5
   - DMT.Models project
