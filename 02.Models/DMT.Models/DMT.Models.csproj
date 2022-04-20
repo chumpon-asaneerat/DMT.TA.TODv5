@@ -97,6 +97,11 @@
     <Compile Include="Models\Configuration\AppOptions.cs" />
     <Compile Include="Models\Configuration\UniqueCode.cs" />
     <Compile Include="Models\Configuration\ViewHistory.cs" />
+    <Compile Include="Models\Master\MActiveStatus.cs" />
+    <Compile Include="Models\Master\MCardAllow.cs" />
+    <Compile Include="Models\Master\MCoupon.cs" />
+    <Compile Include="Models\Master\MCouponBook.cs" />
+    <Compile Include="Models\Master\MCurrency.cs" />
     <Compile Include="Models\Users\Role.cs" />
     <Compile Include="Models\Users\User.cs" />
     <Compile Include="Models\Users\UserAccess.cs" />

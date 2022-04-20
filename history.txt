@@ -1,4 +1,14 @@
 [commited]
+Update 2022-04-20 #12
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Add MActiveStatus enum
+    - Add MCardAllow class.
+    - Add MCoupon class.
+    - Add MCouponBook class.
+    - Add MCurrency class.
+
+[commited]
 Update 2022-04-20 #11
 - DMT.TAxTODv5
   - DMT.Models project
