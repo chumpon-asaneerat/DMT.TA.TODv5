@@ -1,4 +1,11 @@
 [commited]
+Update 2022-04-20 #13
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Add IsAliveResult class.
+    - Move some model folders to plaza sub folder.
+
+[commited]
 Update 2022-04-20 #12
 - DMT.TAxTODv5
   - DMT.Models project

@@ -94,17 +94,18 @@
     <Compile Include="Models\Common\NSearch.cs" />
     <Compile Include="Models\Common\NTable.cs" />
     <Compile Include="Models\Common\Utils.cs" />
-    <Compile Include="Models\Configuration\AppOptions.cs" />
-    <Compile Include="Models\Configuration\UniqueCode.cs" />
-    <Compile Include="Models\Configuration\ViewHistory.cs" />
-    <Compile Include="Models\Master\MActiveStatus.cs" />
-    <Compile Include="Models\Master\MCardAllow.cs" />
-    <Compile Include="Models\Master\MCoupon.cs" />
-    <Compile Include="Models\Master\MCouponBook.cs" />
-    <Compile Include="Models\Master\MCurrency.cs" />
-    <Compile Include="Models\Users\Role.cs" />
-    <Compile Include="Models\Users\User.cs" />
-    <Compile Include="Models\Users\UserAccess.cs" />
+    <Compile Include="Models\Plaza\Common\IsAliveResult.cs" />
+    <Compile Include="Models\Plaza\Configuration\AppOptions.cs" />
+    <Compile Include="Models\Plaza\Configuration\UniqueCode.cs" />
+    <Compile Include="Models\Plaza\Configuration\ViewHistory.cs" />
+    <Compile Include="Models\Plaza\Master\MActiveStatus.cs" />
+    <Compile Include="Models\Plaza\Master\MCardAllow.cs" />
+    <Compile Include="Models\Plaza\Master\MCoupon.cs" />
+    <Compile Include="Models\Plaza\Master\MCouponBook.cs" />
+    <Compile Include="Models\Plaza\Master\MCurrency.cs" />
+    <Compile Include="Models\Plaza\Users\Role.cs" />
+    <Compile Include="Models\Plaza\Users\User.cs" />
+    <Compile Include="Models\Plaza\Users\UserAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="__ModelsV1\Class1.cs" />
     <None Include="__ModelsV1\Models.V1.cs" />
@@ -114,7 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ExtensionMethods\" />
-    <Folder Include="Models\Shifts\" />
+    <Folder Include="Models\Plaza\Shifts\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
