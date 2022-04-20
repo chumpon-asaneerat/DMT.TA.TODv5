@@ -103,6 +103,7 @@
     <Compile Include="Models\Plaza\Master\MCoupon.cs" />
     <Compile Include="Models\Plaza\Master\MCouponBook.cs" />
     <Compile Include="Models\Plaza\Master\MCurrency.cs" />
+    <Compile Include="Models\Plaza\Shifts\Shift.cs" />
     <Compile Include="Models\Plaza\Users\Role.cs" />
     <Compile Include="Models\Plaza\Users\User.cs" />
     <Compile Include="Models\Plaza\Users\UserAccess.cs" />
@@ -139,7 +140,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ExtensionMethods\" />
-    <Folder Include="Models\Plaza\Shifts\" />
+    <Folder Include="Models\Plaza\Coupon\Common\" />
+    <Folder Include="Models\Plaza\Coupon\TSB\" />
+    <Folder Include="Models\Plaza\Coupon\User\" />
+    <Folder Include="Models\Plaza\Credit\TSB\" />
+    <Folder Include="Models\Plaza\Credit\User\" />
+    <Folder Include="Models\Plaza\Exchange\" />
+    <Folder Include="Models\Plaza\Infrastructures\" />
+    <Folder Include="Models\Plaza\Revenues\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>

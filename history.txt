@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-20 #17
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Ported Shift class.
+
+[commited]
 Update 2022-04-20 #16
 - DMT.TAxTODv5
   - DMT.Models project
