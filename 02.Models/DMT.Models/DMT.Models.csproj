@@ -107,9 +107,24 @@
     <Compile Include="Models\Plaza\Users\User.cs" />
     <Compile Include="Models\Plaza\Users\UserAccess.cs" />
     <Compile Include="Models\RabbitMQ\RabbitMQ.cs" />
+    <Compile Include="Models\SCW\Common.cs" />
+    <Compile Include="Models\SCW\SCWCardAllowList.cs" />
+    <Compile Include="Models\SCW\SCWChangePassword.cs" />
+    <Compile Include="Models\SCW\SCWChiefOnDuty.cs" />
+    <Compile Include="Models\SCW\SCWCouponBookList.cs" />
+    <Compile Include="Models\SCW\SCWCouponList.cs" />
+    <Compile Include="Models\SCW\SCWCurrencyDemonList.cs" />
+    <Compile Include="Models\SCW\SCWDeclare.cs" />
+    <Compile Include="Models\SCW\SCWEmulators.cs" />
+    <Compile Include="Models\SCW\SCWEMVTransactionList.cs" />
+    <Compile Include="Models\SCW\SCWJobList.cs" />
+    <Compile Include="Models\SCW\SCWJobList2.cs" />
+    <Compile Include="Models\SCW\SCWLogInAudit.cs" />
+    <Compile Include="Models\SCW\SCWPasswordExpiresDays.cs" />
+    <Compile Include="Models\SCW\SCWQRCodeTransactionList.cs" />
+    <Compile Include="Models\SCW\SCWSaveChiefDuty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="__ModelsV1\Class1.cs" />
-    <None Include="__ModelsV1\Models.V1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -117,7 +132,6 @@
   <ItemGroup>
     <Folder Include="ExtensionMethods\" />
     <Folder Include="Models\Plaza\Shifts\" />
-    <Folder Include="Models\SCW\" />
     <Folder Include="Models\TAxTOD\" />
     <Folder Include="Services\" />
   </ItemGroup>
