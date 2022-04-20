@@ -123,6 +123,14 @@
     <Compile Include="Models\SCW\SCWPasswordExpiresDays.cs" />
     <Compile Include="Models\SCW\SCWQRCodeTransactionList.cs" />
     <Compile Include="Models\SCW\SCWSaveChiefDuty.cs" />
+    <Compile Include="Models\TAxTOD\TAAExchange.cs" />
+    <Compile Include="Models\TAxTOD\TAATSBCredit.cs" />
+    <Compile Include="Models\TAxTOD\TAAUserCredit.cs" />
+    <Compile Include="Models\TAxTOD\TACouponInquiry.cs" />
+    <Compile Include="Models\TAxTOD\TACouponReveiced.cs" />
+    <Compile Include="Models\TAxTOD\TACouponTransaction.cs" />
+    <Compile Include="Models\TAxTOD\TASAPClasses.cs" />
+    <Compile Include="Models\TAxTOD\TCTCheckBoj.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="__ModelsV1\Class1.cs" />
   </ItemGroup>
@@ -132,7 +140,6 @@
   <ItemGroup>
     <Folder Include="ExtensionMethods\" />
     <Folder Include="Models\Plaza\Shifts\" />
-    <Folder Include="Models\TAxTOD\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
