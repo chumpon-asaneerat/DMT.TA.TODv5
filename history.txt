@@ -1,4 +1,11 @@
 [commited]
+Update 2022-04-20 #9
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Port Role/User class
+    - Port NSearch and Search classes (except search by plazagroup).
+
+[commited]
 Update 2022-04-20 #8
 - DMT.TAxTODv5
   - Add AccountDbServer class

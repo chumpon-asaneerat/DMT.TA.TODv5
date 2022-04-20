@@ -87,11 +87,15 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Common\DMT.Search.cs" />
     <Compile Include="Models\Common\DMTModelBase.cs" />
     <Compile Include="Models\Common\NDbResult.cs" />
     <Compile Include="Models\Common\NQueries.cs" />
+    <Compile Include="Models\Common\NSearch.cs" />
     <Compile Include="Models\Common\NTable.cs" />
     <Compile Include="Models\Common\Utils.cs" />
+    <Compile Include="Models\Users\Role.cs" />
+    <Compile Include="Models\Users\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="__ModelsV1\Class1.cs" />
     <None Include="__ModelsV1\Models.V1.cs" />
@@ -101,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ExtensionMethods\" />
+    <Folder Include="Models\Shifts\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
