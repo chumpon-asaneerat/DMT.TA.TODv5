@@ -96,6 +96,7 @@
     <Compile Include="Models\Common\Utils.cs" />
     <Compile Include="Models\Users\Role.cs" />
     <Compile Include="Models\Users\User.cs" />
+    <Compile Include="Models\Users\UserAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="__ModelsV1\Class1.cs" />
     <None Include="__ModelsV1\Models.V1.cs" />
