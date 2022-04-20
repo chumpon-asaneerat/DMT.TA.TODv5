@@ -1,4 +1,12 @@
 [commited]
+Update 2022-04-20 #11
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Port AppOption class
+    - Port UniqueKey class
+    - Port ViewHistory class
+
+[commited]
 Update 2022-04-20 #10
 - DMT.TAxTODv5
   - DMT.Models project

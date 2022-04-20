@@ -94,6 +94,9 @@
     <Compile Include="Models\Common\NSearch.cs" />
     <Compile Include="Models\Common\NTable.cs" />
     <Compile Include="Models\Common\Utils.cs" />
+    <Compile Include="Models\Configuration\AppOptions.cs" />
+    <Compile Include="Models\Configuration\UniqueCode.cs" />
+    <Compile Include="Models\Configuration\ViewHistory.cs" />
     <Compile Include="Models\Users\Role.cs" />
     <Compile Include="Models\Users\User.cs" />
     <Compile Include="Models\Users\UserAccess.cs" />
