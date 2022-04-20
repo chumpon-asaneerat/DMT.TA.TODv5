@@ -106,6 +106,7 @@
     <Compile Include="Models\Plaza\Users\Role.cs" />
     <Compile Include="Models\Plaza\Users\User.cs" />
     <Compile Include="Models\Plaza\Users\UserAccess.cs" />
+    <Compile Include="Models\RabbitMQ\RabbitMQ.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="__ModelsV1\Class1.cs" />
     <None Include="__ModelsV1\Models.V1.cs" />
@@ -116,6 +117,8 @@
   <ItemGroup>
     <Folder Include="ExtensionMethods\" />
     <Folder Include="Models\Plaza\Shifts\" />
+    <Folder Include="Models\SCW\" />
+    <Folder Include="Models\TAxTOD\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
