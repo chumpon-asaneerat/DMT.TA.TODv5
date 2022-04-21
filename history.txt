@@ -1,4 +1,12 @@
 [commited]
+Update 2022-04-21 #1
+- DMT.TAxTODv5
+  - DMT.Core project
+    - Ported JsonMessageTransferService class.
+    - JsonMessageTransferService class update
+      - rewrite compression code.
+
+[commited]
 Update 2022-04-20 #17
 - DMT.TAxTODv5
   - DMT.Models project
