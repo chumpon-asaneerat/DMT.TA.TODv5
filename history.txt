@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-21 #2
+- DMT.TAxTODv5
+  - DMT.RabbitMQ.Client project
+    - Implements RabbitMQService #1 (disable config related code)
+
+[commited]
 Update 2022-04-21 #1
 - DMT.TAxTODv5
   - DMT.Core project
