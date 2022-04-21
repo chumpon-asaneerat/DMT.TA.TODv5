@@ -1,4 +1,12 @@
 [commited]
+Update 2022-04-21 #8
+- DMT.TAxTODv5
+  - DMT.Controls project
+    - Ported Themes xaml files.
+    - Ported MessageBoxs files.
+    - Ported Controls files.
+
+[commited]
 Update 2022-04-21 #7
 - DMT.TAxTODv5
   - DMT.Models project

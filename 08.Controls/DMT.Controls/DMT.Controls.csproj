@@ -55,8 +55,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="Controls\Buttons\ImageButton.xaml.cs">
+      <DependentUpon>ImageButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Utils\AttachProperties.cs" />
+    <Compile Include="Controls\Utils\StringToNumberConverter.cs" />
+    <Compile Include="Controls\Utils\ThaiYearConverter.cs" />
+    <Compile Include="MessageBox\MessageBoxWindow.xaml.cs">
+      <DependentUpon>MessageBoxWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxYesNo1Window.xaml.cs">
+      <DependentUpon>MessageBoxYesNo1Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxYesNo2Window.xaml.cs">
+      <DependentUpon>MessageBoxYesNo2Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxYesNo3Window.xaml.cs">
+      <DependentUpon>MessageBoxYesNo3Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox\MessageBoxYesNoWindow.xaml.cs">
+      <DependentUpon>MessageBoxYesNoWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -80,17 +98,87 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="MessageBox\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="Controls\UserControl1.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Controls\Buttons\ImageButton.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MessageBox\MessageBoxWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MessageBox\MessageBoxYesNo1Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MessageBox\MessageBoxYesNo2Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MessageBox\MessageBoxYesNo3Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MessageBox\MessageBoxYesNoWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\CommonEntryStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\CommonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\CouponEntryStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\CreditEntryStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\Generic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\GroupMenuStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ImageButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\InlineButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ListBoxStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ListViewStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\RevenueEntryStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\TextBlockStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\TreeViewStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\XceedToolKitStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
