@@ -69,10 +69,22 @@ namespace DMT
                 /* Setup Behaviors */
                 Behaviors = new NAppBehaviors()
                 {
+                    //***********************************************************************************
+                    // NOTE:
+                    //***********************************************************************************
+                    // WHEN Use in same PC required to change port number otherwiser app will die.
+                    //***********************************************************************************
+#if SINGELTON_APP
                     /* Set to true for allow only one instance of application can execute an runtime */
                     IsSingleAppInstance = true,
                     /* Set to true for enable Debuggers this value should always be true */
                     EnableDebuggers = true
+#else
+                    /* Set to true for allow only one instance of application can execute an runtime */
+                    IsSingleAppInstance = false,
+                    /* Set to true for enable Debuggers this value should always be true */
+                    EnableDebuggers = true
+#endif
                 }
             };
 
@@ -93,6 +105,10 @@ namespace DMT
             // Start log manager
             LogManager.Instance.Start();
 
+            // Start RabbitMQ
+            //Services.RabbitMQService.Instance.RabbitMQ = AccountConfigManager.Instance.RabbitMQ;
+            Services.RabbitMQService.Instance.Start();
+
             Window window = null;
             window = new MainWindow();
 
@@ -112,6 +128,9 @@ namespace DMT
         /// <param name="e"></param>
         protected override void OnExit(ExitEventArgs e)
         {
+            // Shutdown RabbitMQ.
+            Services.RabbitMQService.Instance.Shutdown();
+
             // Shutdown log manager
             LogManager.Instance.Shutdown();
 

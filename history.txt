@@ -1,4 +1,19 @@
 [commited]
+Update 2022-04-21 #3
+- DMT.TAxTODv5
+  - DMT.Account.App project
+    - Update app.xaml.cs
+    - Add RabbitMQService code -> test compression (OK).
+  - DMT.Plaza.Config.App project
+    - Update app.xaml.cs
+  - DMT.Plaza.Simulator.App project
+    - Update app.xaml.cs
+  - DMT.TA.App project
+    - Update app.xaml.cs
+  - DMT.TOD.App project
+    - Update app.xaml.cs
+
+[commited]
 Update 2022-04-21 #2
 - DMT.TAxTODv5
   - DMT.RabbitMQ.Client project
