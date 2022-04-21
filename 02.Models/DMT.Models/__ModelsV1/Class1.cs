@@ -424,6 +424,81 @@
         }
 
         #endregion
+
+        #region Shift
+
+        /// <summary>
+        /// Gets or sets Shift Id.
+        /// </summary>
+        [Category("Shift")]
+        [Description("Gets or sets Shift Id.")]
+        [ReadOnly(true)]
+        [NotNull]
+        [Indexed]
+        [PropertyMapName("ShiftId")]
+        public int ShiftId
+        {
+            get
+            {
+                return _ShiftId;
+            }
+            set
+            {
+                if (_ShiftId != value)
+                {
+                    _ShiftId = value;
+                    this.Raise(() => this.ShiftId);
+                }
+            }
+        }
+        /// <summary>
+        /// Gets or sets Shift Name EN.
+        /// </summary>
+        [Category("Shift")]
+        [Description("Gets or sets Shift Name EN.")]
+        [ReadOnly(true)]
+        [Ignore]
+        [PropertyMapName("ShiftNameEN")]
+        public virtual string ShiftNameEN
+        {
+            get
+            {
+                return _ShiftNameEN;
+            }
+            set
+            {
+                if (_ShiftNameEN != value)
+                {
+                    _ShiftNameEN = value;
+                    this.Raise(() => this.ShiftNameEN);
+                }
+            }
+        }
+        /// <summary>
+        /// Gets or sets Shift Name TH.
+        /// </summary>
+        [Category("Shift")]
+        [Description("Gets or sets Shift Name TH.")]
+        [ReadOnly(true)]
+        [Ignore]
+        [PropertyMapName("ShiftNameTH")]
+        public virtual string ShiftNameTH
+        {
+            get
+            {
+                return _ShiftNameTH;
+            }
+            set
+            {
+                if (_ShiftNameTH != value)
+                {
+                    _ShiftNameTH = value;
+                    this.Raise(() => this.ShiftNameTH);
+                }
+            }
+        }
+
+        #endregion
     }
 
     public class FKs

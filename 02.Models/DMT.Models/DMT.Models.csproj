@@ -110,6 +110,7 @@
     <Compile Include="Models\Plaza\Master\MCurrency.cs" />
     <Compile Include="Models\Plaza\Shifts\Shift.cs" />
     <Compile Include="Models\Plaza\Shifts\TSBShift.cs" />
+    <Compile Include="Models\Plaza\Shifts\UserShift.cs" />
     <Compile Include="Models\Plaza\Users\Role.cs" />
     <Compile Include="Models\Plaza\Users\User.cs" />
     <Compile Include="Models\Plaza\Users\UserAccess.cs" />

@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-21 #6
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Ported UserShift class.
+
+[commited]
 Update 2022-04-21 #5
 - DMT.TAxTODv5
   - DMT.Models project
