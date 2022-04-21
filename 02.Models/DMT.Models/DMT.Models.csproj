@@ -98,6 +98,11 @@
     <Compile Include="Models\Plaza\Configuration\AppOptions.cs" />
     <Compile Include="Models\Plaza\Configuration\UniqueCode.cs" />
     <Compile Include="Models\Plaza\Configuration\ViewHistory.cs" />
+    <Compile Include="Models\Plaza\Infrastructures\Lane.cs" />
+    <Compile Include="Models\Plaza\Infrastructures\Plaza.cs" />
+    <Compile Include="Models\Plaza\Infrastructures\PlazaGroup.cs" />
+    <Compile Include="Models\Plaza\Infrastructures\TSB.cs" />
+    <Compile Include="Models\Plaza\Infrastructures\UIModels.cs" />
     <Compile Include="Models\Plaza\Master\MActiveStatus.cs" />
     <Compile Include="Models\Plaza\Master\MCardAllow.cs" />
     <Compile Include="Models\Plaza\Master\MCoupon.cs" />
@@ -146,7 +151,6 @@
     <Folder Include="Models\Plaza\Credit\TSB\" />
     <Folder Include="Models\Plaza\Credit\User\" />
     <Folder Include="Models\Plaza\Exchange\" />
-    <Folder Include="Models\Plaza\Infrastructures\" />
     <Folder Include="Models\Plaza\Revenues\" />
     <Folder Include="Services\" />
   </ItemGroup>

@@ -1,4 +1,14 @@
 [commited]
+Update 2022-04-21 #4
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Ported TSB class.
+    - Ported PlazaGroup class.
+    - Ported Plaza class.
+    - Ported Lane class.
+    - Ported UICommands class.
+
+[commited]
 Update 2022-04-21 #3
 - DMT.TAxTODv5
   - DMT.Account.App project
