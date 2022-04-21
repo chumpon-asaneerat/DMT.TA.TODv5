@@ -1,4 +1,10 @@
 [commited]
+Update 2022-04-21 #7
+- DMT.TAxTODv5
+  - DMT.Models project
+    - Update DMT.Searchs classes.
+
+[commited]
 Update 2022-04-21 #6
 - DMT.TAxTODv5
   - DMT.Models project
