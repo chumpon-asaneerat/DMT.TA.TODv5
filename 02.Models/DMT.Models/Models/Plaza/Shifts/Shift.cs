@@ -542,6 +542,12 @@ namespace DMT.Models
 
         #endregion
 
+        #region Now
+
+        /// <summary>
+        /// Now
+        /// </summary>
+        /// <returns></returns>
         public static Shift Now()
         {
             Shift ret = null;
@@ -558,6 +564,8 @@ namespace DMT.Models
             }
             return ret;
         }
+
+        #endregion
 
         #endregion
     }

@@ -555,5 +555,30 @@
         }
 
         #endregion
+
+        #region Shift
+
+        /// <summary>
+        /// Gets or sets Shift Name EN.
+        /// </summary>
+        [MaxLength(50)]
+        [PropertyMapName("ShiftNameEN")]
+        public override string ShiftNameEN
+        {
+            get { return base.ShiftNameEN; }
+            set { base.ShiftNameEN = value; }
+        }
+        /// <summary>
+        /// Gets or sets Shift Name TH.
+        /// </summary>
+        [MaxLength(50)]
+        [PropertyMapName("ShiftNameTH")]
+        public override string ShiftNameTH
+        {
+            get { return base.ShiftNameTH; }
+            set { base.ShiftNameTH = value; }
+        }
+
+        #endregion
     }
 }
