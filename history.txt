@@ -1,4 +1,9 @@
 [commited]
+Update 2022-04-23 #5
+- DMT.TAxTODv5
+  - Cleanup bin folders
+
+[commited]
 Update 2022-04-23 #4
 - DMT.TAxTODv5
   - DMT.TA.App project update #2 (remove all update #1)
