@@ -1,0 +1,245 @@
+﻿<UserControl x:Class="DMT.Account.Pages.Exchange.TSBRequestExchangeViewPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ctrl="clr-namespace:DMT.Controls.Buttons;assembly=DMT.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             d:DesignHeight="650"
+             d:DesignWidth="1000"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <!--  IMAGE BUTTON STYLE  -->
+        <sys:Double x:Key="ImageButtonWidth">250</sys:Double>
+    </UserControl.Resources>
+    <Grid Background="DimGray">
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="{StaticResource PageMargin}" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="{StaticResource PageMargin}" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="{StaticResource PageMargin}" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="{StaticResource PageMargin}" />
+            </Grid.RowDefinitions>
+            <DockPanel Grid.Row="1"
+                       Grid.Column="1"
+                       HorizontalAlignment="Stretch"
+                       VerticalAlignment="Stretch">
+                <!--  BUTTONS  -->
+                <DockPanel Height="60"
+                           HorizontalAlignment="Stretch"
+                           VerticalAlignment="Stretch"
+                           DockPanel.Dock="Bottom">
+                    <Grid Width="5" DockPanel.Dock="Left" />
+                    <ctrl:ImageButton x:Name="cmdApprove"
+                                      Click="cmdApprove_Click"
+                                      DockPanel.Dock="Left"
+                                      ImageSource="/DMT.Account.App;component/Images/Button/Approve.png">
+                        <TextBlock Style="{StaticResource ImageButtonText}" Text="อนุมัติ" />
+                    </ctrl:ImageButton>
+                    <Grid Width="5" DockPanel.Dock="Left" />
+                    <ctrl:ImageButton x:Name="cmdNotApprove"
+                                      Click="cmdNotApprove_Click"
+                                      DockPanel.Dock="Left"
+                                      ImageSource="/DMT.Account.App;component/Images/Button/Rejected3.png">
+                        <TextBlock Style="{StaticResource ImageButtonText}" Text="ไม่อนุมัติ" />
+                    </ctrl:ImageButton>
+                    <Grid Width="5" DockPanel.Dock="Right" />
+                    <ctrl:ImageButton x:Name="cmdBack"
+                                      Click="cmdBack_Click"
+                                      DockPanel.Dock="Right"
+                                      ImageSource="/DMT.Account.App;component/Images/Button/Home.png">
+                        <TextBlock Style="{StaticResource ImageButtonText}" Text="กลับสู่หน้าจอหลัก" />
+                    </ctrl:ImageButton>
+                    <Grid />
+                </DockPanel>
+                <!--  WORK AREA  -->
+                <TabControl x:Name="tabs" SelectionChanged="tabs_SelectionChanged">
+                    <TabItem FontSize="20" Header="รายการรออนุมัติ">
+                        <DockPanel LastChildFill="True">
+                            <Border Margin="10,1"
+                                    Background="CornflowerBlue"
+                                    BorderBrush="Silver"
+                                    BorderThickness="1"
+                                    DockPanel.Dock="Top">
+                                <TextBlock Margin="5,3"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Center"
+                                           Style="{StaticResource LabelText}"
+                                           Text="รายการรออนุมัติ" />
+                            </Border>
+                            <!--  SEPERATOR  -->
+                            <TextBlock Height="10" DockPanel.Dock="Top" />
+                            <!--  SEPERATOR (BOTTOM BELOW LISTVIEW)  -->
+                            <TextBlock Height="10" DockPanel.Dock="Bottom" />
+                            <!--  LIST VIEW  -->
+                            <ListView x:Name="gridRequest"
+                                      Margin="10,0"
+                                      FontSize="{StaticResource InputFontSize18}"
+                                      ItemContainerStyle="{StaticResource DMTListViewItemContainer}"
+                                      ItemsSource="{Binding}"
+                                      Style="{StaticResource SingleSelectListView}">
+                                <ListView.View>
+                                    <GridView>
+                                        <!--  TSB  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource TSBTHName}"
+                                                        Header=" ด่าน "
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}" />
+                                        <!--  REQUEST DATE  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource RequestDate}"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource RequestDateHeader}" />
+                                        <!--  REQUIRED DATE (BEGIN-END)  -->
+                                        <GridViewColumn Width="Auto"
+                                                        CellTemplate="{StaticResource PediodColumns}"
+                                                        Header="วันที่ใช้เงิน"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderFreezeContainer}"
+                                                        HeaderTemplate="{StaticResource PediodColumnsHeader}" />
+                                        <!--  EXCHANGE TOTAL BHT  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource ExchangeBHT}"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource ExchangeBHTHeader}" />
+                                        <!--  BORROW TOTAL BHT  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource BorrowBHT}"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource BorrowBHTHeader}" />
+                                        <!--  ADDITION TOTAL BHT  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource AdditionalBHT}"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource AdditionalBHTHeader}" />
+                                        <!--  SUM TOTAL BHT  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource ExchangeTotalBHT}"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource ExchangeTotalBHTHeader}" />
+                                        <!--  SELECTED (CHECKBOX)  -->
+                                        <GridViewColumn Width="90"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource SelectedRequestHeader}">
+                                            <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <CheckBox HorizontalAlignment="Center"
+                                                              VerticalAlignment="Center"
+                                                              IsChecked="{Binding Path=Selected, Mode=OneWay}" />
+                                                </DataTemplate>
+                                            </GridViewColumn.CellTemplate>
+                                        </GridViewColumn>
+                                        <!--  SHOW DETAIL (BUTTON)  -->
+                                        <GridViewColumn Width="150"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource RequestDetailHeader}">
+                                            <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <Button x:Name="cmdRequestDetail"
+                                                            Height="30"
+                                                            FontSize="{StaticResource InputFontSize18}"
+                                                            Style="{DynamicResource InlineButton}">
+                                                        <TextBlock Margin="5,0"
+                                                                   Text="เรียกดู"
+                                                                   TextAlignment="Left" />
+                                                    </Button>
+                                                </DataTemplate>
+                                            </GridViewColumn.CellTemplate>
+                                        </GridViewColumn>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                        </DockPanel>
+                    </TabItem>
+                    <TabItem FontSize="20" Header="รายการอนุมัติ">
+                        <DockPanel LastChildFill="True">
+                            <Border Margin="10,1"
+                                    Background="CornflowerBlue"
+                                    BorderBrush="Silver"
+                                    BorderThickness="1"
+                                    DockPanel.Dock="Top">
+                                <TextBlock Margin="5,3"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Center"
+                                           Style="{StaticResource LabelText}"
+                                           Text="รายการอนุมัติ" />
+                            </Border>
+                            <!--  SEPERATOR  -->
+                            <TextBlock Height="10" DockPanel.Dock="Top" />
+                            <!--  SEPERATOR (BOTTOM BELOW LISTVIEW)  -->
+                            <TextBlock Height="10" DockPanel.Dock="Bottom" />
+                            <!--  LIST VIEW  -->
+                            <ListView x:Name="gridApprove"
+                                      Margin="10,0"
+                                      FontSize="{StaticResource InputFontSize18}"
+                                      ItemContainerStyle="{StaticResource DMTListViewItemContainer}"
+                                      ItemsSource="{Binding}"
+                                      Style="{StaticResource SingleSelectListView}">
+                                <ListView.View>
+                                    <GridView>
+                                        <!--  TSB  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource TSBTHName}"
+                                                        Header=" ด่าน "
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}" />
+                                        <!--  REQUEST DATE  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource RequestDate}"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource RequestDateHeader}" />
+                                        <!--  REQUIRED DATE (BEGIN-END)  -->
+                                        <GridViewColumn Width="Auto"
+                                                        CellTemplate="{StaticResource PediodColumns}"
+                                                        Header="วันที่ใช้เงิน"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderFreezeContainer}"
+                                                        HeaderTemplate="{StaticResource PediodColumnsHeader}" />
+                                        <!--  EXCHANGE TOTAL BHT  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource ExchangeBHT}"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource ExchangeBHTHeader}" />
+                                        <!--  BORROW TOTAL BHT  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource BorrowBHT}"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource BorrowBHTHeader}" />
+                                        <!--  ADDITION TOTAL BHT  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource AdditionalBHT}"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource AdditionalBHTHeader}" />
+                                        <!--  SUM TOTAL BHT  -->
+                                        <GridViewColumn Width="150"
+                                                        CellTemplate="{StaticResource ExchangeTotalBHT}"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource ExchangeTotalBHTHeader}" />
+                                        <!--  SHOW DETAIL (BUTTON)  -->
+                                        <GridViewColumn Width="150"
+                                                        HeaderContainerStyle="{StaticResource CommonHeaderContainer}"
+                                                        HeaderTemplate="{StaticResource RequestDetailHeader}">
+                                            <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <Button x:Name="cmdApproveDetail"
+                                                            Height="30"
+                                                            FontSize="{StaticResource InputFontSize18}"
+                                                            Style="{DynamicResource InlineButton}">
+                                                        <TextBlock Margin="5,0"
+                                                                   Text="เรียกดู"
+                                                                   TextAlignment="Left" />
+                                                    </Button>
+                                                </DataTemplate>
+                                            </GridViewColumn.CellTemplate>
+                                        </GridViewColumn>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                        </DockPanel>
+                    </TabItem>
+                </TabControl>
+            </DockPanel>
+        </Grid>
+    </Grid>
+</UserControl>
