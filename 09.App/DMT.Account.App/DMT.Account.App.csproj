@@ -147,91 +147,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Account\Controls\TSBCreditTransactionEntry.xaml.cs">
-      <DependentUpon>TSBCreditTransactionEntry.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Pages\Balance\TSBCheckBalancePage.xaml.cs">
-      <DependentUpon>TSBCheckBalancePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Pages\Coupon\CouponHistoryViewPage.xaml.cs">
-      <DependentUpon>CouponHistoryViewPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Pages\Exchange\TSBRequestExchangeViewPage.xaml.cs">
-      <DependentUpon>TSBRequestExchangeViewPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Pages\Menu\MainMenu.xaml.cs">
-      <DependentUpon>MainMenu.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Pages\SAP\SAPSendCouponSoldPage.xaml.cs">
-      <DependentUpon>SAPSendCouponSoldPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Windows\Balance\UserCheckBalanceWindow.xaml.cs">
-      <DependentUpon>UserCheckBalanceWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Windows\Exchange\TSBRequestExchangeWindow.xaml.cs">
-      <DependentUpon>TSBRequestExchangeWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Windows\SAP\SAPCustomerWindow.xaml.cs">
-      <DependentUpon>SAPCustomerWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Windows\Utils\SplashScreenWindow.xaml.cs">
-      <DependentUpon>SplashScreenWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Services\AccountApp.cs" />
-    <Compile Include="Services\AccountManager.cs" />
-    <Compile Include="SignIn\Pages\SignInPage.xaml.cs">
-      <DependentUpon>SignInPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SignIn\SmartcardManager.cs" />
-    <Compile Include="SignIn\UserSearchManager.cs" />
-    <Compile Include="SignIn\Windows\UserSearchWindow.xaml.cs">
-      <DependentUpon>UserSearchWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StatusBar\AccountStatusBar.xaml.cs">
-      <DependentUpon>AccountStatusBar.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StatusBar\Elements\AppInfoStatus.xaml.cs">
-      <DependentUpon>AppInfoStatus.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StatusBar\Elements\ClientInfoStatus.xaml.cs">
-      <DependentUpon>ClientInfoStatus.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StatusBar\Elements\LocalDbStatus.xaml.cs">
-      <DependentUpon>LocalDbStatus.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StatusBar\Elements\RabbitMQStatus.xaml.cs">
-      <DependentUpon>RabbitMQStatus.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StatusBar\Elements\SCWStatus.xaml.cs">
-      <DependentUpon>SCWStatus.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StatusBar\Elements\StatusBarService.cs" />
-    <Compile Include="StatusBar\Elements\TAServerStatus.xaml.cs">
-      <DependentUpon>TAServerStatus.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Header\AccountHeader.xaml.cs">
-      <DependentUpon>AccountHeader.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Header\Elements\HeaderBarService.cs" />
-    <Compile Include="Header\Elements\HeaderDateTime.xaml.cs">
-      <DependentUpon>HeaderDateTime.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Header\Elements\HeaderLogo.xaml.cs">
-      <DependentUpon>HeaderLogo.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Header\Elements\HeaderUser.xaml.cs">
-      <DependentUpon>HeaderUser.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Message\MQResendService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -260,101 +184,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Page Include="Account\Controls\TSBCreditTransactionEntry.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Account\Pages\Balance\TSBCheckBalancePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Account\Pages\Coupon\CouponHistoryViewPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Account\Pages\Exchange\TSBRequestExchangeViewPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Account\Pages\Menu\MainMenu.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Account\Pages\SAP\SAPSendCouponSoldPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Account\Windows\Balance\UserCheckBalanceWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Account\Windows\Exchange\TSBRequestExchangeWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Account\Windows\SAP\SAPCustomerWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Account\Windows\Utils\SplashScreenWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Header\AccountHeader.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Header\Elements\HeaderDateTime.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Header\Elements\HeaderLogo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Header\Elements\HeaderUser.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SignIn\Pages\SignInPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="SignIn\Windows\UserSearchWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="StatusBar\AccountStatusBar.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="StatusBar\Elements\AppInfoStatus.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="StatusBar\Elements\ClientInfoStatus.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="StatusBar\Elements\LocalDbStatus.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="StatusBar\Elements\RabbitMQStatus.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="StatusBar\Elements\SCWStatus.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="StatusBar\Elements\TAServerStatus.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
