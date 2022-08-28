@@ -1,4 +1,9 @@
 [commited]
+Update 2022-08-28 #1
+  - Update NLib project.
+    - NLib.Reflections.Cache -> update SetProperty code.
+
+[commited]
 Update 2022-08-19 #1
 - DMT.TAxTODv5
   - DMT.Core project update
